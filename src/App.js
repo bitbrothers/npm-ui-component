@@ -33,55 +33,28 @@ import NoteCard from './components/pipeline/NoteCard';
 import ProjectCard from './components/pipeline/ProjectCard';
 import TaskCard from './components/pipeline/TaskCard';
 import TeamCard from './components/pipeline/TeamCard';
+import logo from './assets/avatar-male-3.jpg';
 
 
 class App extends React.Component {
 
+  state = {
+    common:{
+      message: "Hello World, this is a component!",
+      type: "primary",
+      title:"Main Title"
+    },
+  }
+
   render() {
     return (
       <Aux className="app">
-       {/* <Alert 
-        message="Hello world"
-        type="danger" //primary, secondary, success, danger, warning, info, light, dark
+        <Avatar 
+        source={logo}
+        size="sm" //sm ,lg
         />
 
-        <Badge 
-        message="Hello World"
-        type="danger" //primary, secondary, success, danger, warning, info, light, dark
-        />
-
-        <Breadcrumbs />
-
-        <Button 
-        message="Hello world"
-        type="primary" //primary, secondary, success, danger, warning, info, light, dark, link
-        />
-
-        <Card 
-        title="Card Title"
-        message="Hello World"
-        link="https://pipeline.mediumra.re/components-bootstrap.html"
-        linkText="Click Me!"
-        /> 
-
-        <Dropwdown />
-
-        <Form />
-
-        <InputGroup />
-
-        <ListGroup />
-
-        <Nav />
-
-        <Navbar />
-
-        <ProgressBar />
-
-        <Toast />
-
-        <Tooltips />
-
+{/*
         <Activity 
         icon="Action Icon"
         author="Krish"
