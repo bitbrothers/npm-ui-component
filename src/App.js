@@ -34,7 +34,7 @@ import ProjectCard from './components/pipeline/ProjectCard';
 import TaskCard from './components/pipeline/TaskCard';
 import TeamCard from './components/pipeline/TeamCard';
 import logo from './assets/avatar-male-3.jpg';
-
+import './styles.scss';
 
 class App extends React.Component {
 
@@ -49,17 +49,14 @@ class App extends React.Component {
   render() {
     return (
       <Aux className="app">
-        <Avatar 
-        source={logo}
-        size="sm" //sm ,lg
-        />
+
 
 {/*
         <Activity 
-        icon="Action Icon"
+        icon=""
         author="Krish"
         date="Current Time"
-        source="Image source"/>
+        source={logo} />
 
         <Avatar 
         source="Image Source"

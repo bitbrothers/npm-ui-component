@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+/*@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../src/assets/fonts/Inter-UI-Regular.woff2') format('woff2'),
+    url('../src/assets/fonts/Inter-UI-Regular.woff2') format('woff');
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../src/assets/fonts/Inter-UI-Italic.woff2') format('woff2'),
+    url('../src/assets/fonts/Inter-UI-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../src/assets/fonts/Inter-UI-Medium.woff2') format('woff2'),
+    url('../src/assets/fonts/Inter-UI-Medium.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../src/assets/fonts/Inter-UI-MediumItalic.woff2') format('woff2'),
+    url('../src/assets/fonts/Inter-UI-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../src/assets/fonts/Inter-UI-Bold.woff2') format('woff2'),
+    url('../src/assets/fonts/Inter-UI-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../src/assets/fonts/Inter-UI-BoldItalic.woff2') format('woff2'),
+    url('../src/assets/fonts/Inter-UI-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../src/assets/fonts/Inter-UI-Black.woff2') format('woff2'),
+    url('../src/assets/fonts/Inter-UI-Black.woff') format('woff');
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../src/assets/fonts/Inter-UI-BlackItalic.woff2') format('woff2'),
+    url('../src/assets/fonts/Inter-UI-BlackItalic.woff') format('woff');
+}*/
+
+// HTML reset
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//Importing all styles from Pipeline and Bootstrap
+@import 'styling/theme.scss';
+
+//Datepicker Component
+.datepicker {
+  input {
+height: calc(1.5em + 0.875rem + 2px);
+padding: 0.4375rem 1rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #dee2e6;
+border-radius: 0.5rem;
+-webkit-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+  input.active {
+    background-color: #e9ecef;
+    opacity: 1;
+  }
+}

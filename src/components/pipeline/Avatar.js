@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 function Avatar({source, size}) {
     return <img alt="..." class={`avatar avatar-${size}`} src={source} />
