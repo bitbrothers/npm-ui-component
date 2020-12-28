@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import TaskCard from './TaskCard';
 
 function CardList({icon, title}) {
     return (
@@ -14,8 +15,8 @@ function CardList({icon, title}) {
                 </div>
                 </div>
             </div>
-            <div class="card card-task">...</div>
-            <div class="card card-task">...</div>
+            <TaskCard />
+            <TaskCard />
         </div>
     )
 }

@@ -1,15 +1,15 @@
 import React from 'react'
+import Avatar from './Avatar'
 
-function AvatarList({source}) {
+function AvatarList({source, size}) {
+
     return (
         <ul class="avatars">
-            <li>
-            <img alt="..." class="avatar" src={source} />
-            <img alt="..." class="avatar" src={source} />
-            <img alt="..." class="avatar" src={source} />
-            </li>
+            <li><Avatar source={source}/></li>
+            <li><Avatar source={source}/></li>
+            <li><Avatar source={source}/></li>
         </ul>
-    )
+    )      
 }
 
 export default AvatarList

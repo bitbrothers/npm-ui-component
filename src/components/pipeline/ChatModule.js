@@ -1,6 +1,7 @@
 import React from 'react'
+import ChatItem from './ChatItem'
 
-function ChatModule() {
+function ChatModule({source,message}) {
     return (
         <div class="chat-module">
             <div class="chat-module-top">
@@ -8,14 +9,16 @@ function ChatModule() {
                     <div class="input-group input-group-round">
                         <div class="input-group-prepend">
                         <span class="input-group-text">
-                            <i class="material-icons">search</i>
+                            <i class="material-icons">S</i>
                         </span>
                         </div>
                         <input type="search" class="form-control" placeholder="Search chat" aria-label="Search Chat" />
                     </div>
                 </form>
                 <div class="chat-module-body">
-                ...
+                    <ChatItem 
+                    source={source}
+                    message={message}/>
                 </div>
             </div>
             <div class="chat-module-bottom">

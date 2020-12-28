@@ -4,4 +4,4 @@ function Avatar({source, size}) {
     return <img alt="..." class={`avatar avatar-${size}`} src={source} />
 }
 
-export default Avatar
+export default Avatar;

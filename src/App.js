@@ -34,6 +34,8 @@ import ProjectCard from './components/pipeline/ProjectCard';
 import TaskCard from './components/pipeline/TaskCard';
 import TeamCard from './components/pipeline/TeamCard';
 import logo from './assets/avatar-male-3.jpg';
+import logo1 from './assets/avatar-male-4.jpg';
+import logo2 from './assets/avatar-female-2.jpg';
 import './styles.scss';
 
 class App extends React.Component {
@@ -44,12 +46,19 @@ class App extends React.Component {
       type: "primary",
       title:"Main Title"
     },
+    people:{
+      url:[logo,logo1,logo2]
+    }
   }
 
   render() {
     return (
       <Aux className="app">
 
+        <CardList />
+
+        <AvatarList 
+        source={logo}/>
 
 {/*
         <Activity 
