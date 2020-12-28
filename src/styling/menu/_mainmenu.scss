@@ -3,6 +3,7 @@
 //-------------------------------------------------------
 
 .main-menu {
+  list-style-type: none;
   &__item {
     &:hover,
     &--active {
