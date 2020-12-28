@@ -36,6 +36,9 @@ import TeamCard from './components/pipeline/TeamCard';
 import logo from './assets/avatar-male-3.jpg';
 import logo1 from './assets/avatar-male-4.jpg';
 import logo2 from './assets/avatar-female-2.jpg';
+import logo3 from './assets/logo.svg';
+
+import Sidebar from './components/menu/Sidebar'
 import './styles.scss';
 
 class App extends React.Component {
@@ -54,11 +57,8 @@ class App extends React.Component {
   render() {
     return (
       <Aux className="app">
-
-        <CardList />
-
-        <AvatarList 
-        source={logo}/>
+        <Sidebar 
+        logo={logo3}/>
 
 {/*
         <Activity 
