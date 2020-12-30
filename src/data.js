@@ -1,9 +1,14 @@
-const style = {
+import logo from './assets/logo.svg';
+import user from './assets/avatar-female-2.jpg';
+
+const data = {
     common:{
         message: "Hello this is a component!",
         title: "Main Title",
         author: "Krish Vora",
-        date: "28th December"
+        date: "28th December",
+        logo: logo,
+        user: user
     },
     components:{
         mainmenu: [
@@ -43,7 +48,25 @@ const style = {
               title: "Changelog"
             }
           ],
+        quicklinks:[
+          {
+            title: 'Team Overview',
+            linkto: '/'
+          },
+          {
+            title: 'Project',
+            linkto: '/'
+          },
+          {
+            title: 'Single Task',
+            linkto: '/'
+          },
+          {
+            title: 'Kanban Board',
+            linkto: '/'
+          },
+        ],
     }
 }
 
-export default style;
+export default data;
