@@ -3,6 +3,7 @@ import React from 'react';
 import Aux from './hoc/Aux';
 import $ from 'jquery';
 import {BrowserRouter, Link} from 'react-router-dom';
+import Dropwdown from './components/bootstrap/Dropwdown'
 
 import data from './Data';
 
@@ -92,6 +93,7 @@ class App extends React.Component {
         logo={data.common.logo}
         userPhoto={data.common.user}
         quicklinks={data.components.quicklinks}
+        mainmenu={data.components.mainmenu}
         />
 
       </Aux>

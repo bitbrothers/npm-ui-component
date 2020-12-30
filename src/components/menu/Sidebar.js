@@ -35,9 +35,9 @@ function Sidebar({logo, userPhoto, quicklinks}) {
 
                 <div class="dropdown js-dropdown"><button class="btn--toggle js-dropdown-toggle">Add New</button>
                     <ul class="dropdown__list js-dropdown-list">
-                        <li class="dropdown__item"><a class="dropdown__link" href="#">Team</a></li>
-                        <li class="dropdown__item"><a class="dropdown__link" href="#">Project</a></li>
-                        <li class="dropdown__item"><a class="dropdown__link" href="#">Task</a></li>
+                        <li class="dropdown__item"><Link class="dropdown__link" to="/">Team</Link></li>
+                        <li class="dropdown__item"><Link class="dropdown__link" to="/">Project</Link></li>
+                        <li class="dropdown__item"><Link class="dropdown__link" to="/">Task</Link></li>
                     </ul>
                 </div>
 
