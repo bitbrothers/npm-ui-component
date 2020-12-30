@@ -13,7 +13,7 @@ function Sidebar({logo, userPhoto, quicklinks,mainmenu}) {
                 
             <div class="d-mobile"><button class="btn--collaspe js-btn-collaspe"><span class="btn--collaspe__icon"></span></button>
                 <div class="user-profile js-dropdown">
-                    <div class="user-profile__avatar js-dropdown-toggle"><img class="img-fluid" src="images/avatar-male-1.jpg" alt="user-avatar" /></div>
+                    <div class="user-profile__avatar js-dropdown-toggle"><img class="img-fluid" src={userPhoto} alt="user-avatar" /></div>
                     <div class="user-profile__setting js-dropdown-list">
                         <ul class="list-setting">
                             <li class="list-setting__item"><Link class="list-setting__link" to="/">Profile</Link></li>
