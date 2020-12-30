@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import QuickLinks from './QuickLinks';
 import Search from './Search';
 
-function Sidebar({logo, userPhoto, quicklinks}) {
+function Sidebar({logo, userPhoto, quicklinks,mainmenu}) {
     return (
         <aside class="left-sidebar" id="js-sidebar">
             <div class="logo"><a class="logo__link" href="#">
@@ -26,7 +26,8 @@ function Sidebar({logo, userPhoto, quicklinks}) {
 
             <div class="left-sidebar__collapse js-sidebar-collapse">
                 
-                <Main />
+                <Main 
+                items={mainmenu}/>
 
                 <QuickLinks 
                 items={quicklinks} />
