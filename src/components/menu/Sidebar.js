@@ -11,7 +11,7 @@ function Sidebar({logo, userPhoto, quicklinks,mainmenu}) {
                     <h1><img src={logo} alt="logo-main" /></h1>
                 </a></div>
                 
-            <div class="d-mobile"><button class="btn--collaspe js-btn-collaspe"><span class="btn--collaspe__icon"></span></button>
+            <div class="d-mobile"><button class="btn--collaspe js-btn-collaspe"><i class="btn--collaspe__icon fas fa-bars"></i></button>
                 <div class="user-profile js-dropdown">
                     <div class="user-profile__avatar js-dropdown-toggle"><img class="img-fluid" src={userPhoto} alt="user-avatar" /></div>
                     <div class="user-profile__setting js-dropdown-list">
