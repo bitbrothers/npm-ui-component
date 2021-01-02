@@ -6,60 +6,50 @@ function Main(mainmenu) {
         <div class="main-menu-container" id="sidebar-menu">
             <ul class="main-menu">
                 {   
-                    mainmenu.items.map(item=>{
+                    mainmenu.items.map(item => {
+                        //Active with Sub Menu
                         if(item.active && item.submenu){
                             return <li class="main-menu__item js-menu-item main-menu--has-children main-menu__item--active">
                             <Link class="main-menu__link js-menulink nav-link drop-link" to='/'>
                                 {item.title}
-                                <ul class="sub-menu js-submenu">
-                                    {item.submenu ? 
+                            </Link>
+                            <ul class="sub-menu js-submenu">
+                                    {
                                         item.submenu.map(sub=>{
                                         return <li class="main-menu__item js-sub-item main-menu__item--has-children"><Link class="main-menu__link" to='/'>{sub.title}</Link></li>
                                         })
-                                    : null}
-                                </ul>
-                            </Link>
+                                    }
+                            </ul>
                         </li>
                         }
+                        // Active only
                         else if(item.active){
                             return <li class="main-menu__item js-menu-item main-menu__item--active">
-                            <Link class="main-menu__link js-menulink nav-link drop-link" to='/'>
-                                {item.title}
-                                <ul class="sub-menu js-submenu">
-                                    {item.submenu ? 
-                                        item.submenu.map(sub=>{
-                                        return <li class="main-menu__item js-sub-item main-menu__item--has-children"><Link class="main-menu__link" to='/'>{sub.title}</Link></li>
-                                        })
-                                    : null}
-                                </ul>
+                            <Link class="main-menu__link js-menulink nav-link" to='/'>
+                                {item.title}    
                             </Link>
                         </li>
                         }
+                        // Sub Menu only
                         else if(item.submenu){
                             return <li class="main-menu__item js-menu-item main-menu--has-children">
                             <Link class="main-menu__link js-menulink nav-link drop-link" to='/'>
                                 {item.title}
-                                <ul class="sub-menu js-submenu">
-                                    {item.submenu ? 
+                            </Link>
+                            <ul class="sub-menu js-submenu">
+                                    {
                                         item.submenu.map(sub=>{
                                         return <li class="main-menu__item js-sub-item main-menu__item--has-children"><Link class="main-menu__link" to='/'>{sub.title}</Link></li>
                                         })
-                                    : null}
-                                </ul>
-                            </Link>
+                                    }
+                            </ul>
                         </li>
                         }
+                        // Default
                         else{
                             return <li class="main-menu__item js-menu-item">
-                            <Link class="main-menu__link js-menulink nav-link drop-link" to='/'>
+                            <Link class="main-menu__link js-menulink nav-link" to='/'>
                                 {item.title}
-                                <ul class="sub-menu js-submenu">
-                                    {item.submenu ? 
-                                        item.submenu.map(sub=>{
-                                        return <li class="main-menu__item js-sub-item main-menu__item--has-children"><Link class="main-menu__link" to='/'>{sub.title}</Link></li>
-                                        })
-                                    : null}
-                                </ul>
                             </Link>
                         </li>
                         }

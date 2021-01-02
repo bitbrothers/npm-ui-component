@@ -16,21 +16,6 @@
 
     &--has-children {
       position: relative;
-      .drop-link {
-        &::after {
-          content: '\f0da';
-          font-family: 'Font Awesome 5 Free';
-          font-size: 14px;
-          text-align: right;
-          position: absolute;
-          right: 9px;
-          top: 50%;
-          transform: translateY(-50%);
-          color: #a9abad;
-          font-weight: 600;
-          transition: all 0.3s;
-        }
-      }
     }
 
     &--active {
@@ -87,4 +72,20 @@
 .main-menu-container {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.drop-link{
+  &::after {
+    content: '\f0da';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 14px;
+    text-align: right;
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a9abad;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
 }
