@@ -16,7 +16,7 @@
 
     &--has-children {
       position: relative;
-      > a {
+      .drop-link {
         &::after {
           content: '\f0da';
           font-family: 'Font Awesome 5 Free';

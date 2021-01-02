@@ -2,24 +2,67 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 function Main(mainmenu) {
-
     return(
         <div class="main-menu-container" id="sidebar-menu">
             <ul class="main-menu">
-                {
+                {   
                     mainmenu.items.map(item=>{
-                return <li class="main-menu__item js-menu-item">
-                            <Link class="main-menu__link js-menulink nav-link">
+                        if(item.active && item.submenu){
+                            return <li class="main-menu__item js-menu-item main-menu--has-children main-menu__item--active">
+                            <Link class="main-menu__link js-menulink nav-link drop-link" to='/'>
                                 {item.title}
                                 <ul class="sub-menu js-submenu">
                                     {item.submenu ? 
                                         item.submenu.map(sub=>{
-                                        return <li class="main-menu__item js-sub-item"><Link class="main-menu__link">{sub.title}</Link></li>
+                                        return <li class="main-menu__item js-sub-item main-menu__item--has-children"><Link class="main-menu__link" to='/'>{sub.title}</Link></li>
                                         })
                                     : null}
                                 </ul>
                             </Link>
                         </li>
+                        }
+                        else if(item.active){
+                            return <li class="main-menu__item js-menu-item main-menu__item--active">
+                            <Link class="main-menu__link js-menulink nav-link drop-link" to='/'>
+                                {item.title}
+                                <ul class="sub-menu js-submenu">
+                                    {item.submenu ? 
+                                        item.submenu.map(sub=>{
+                                        return <li class="main-menu__item js-sub-item main-menu__item--has-children"><Link class="main-menu__link" to='/'>{sub.title}</Link></li>
+                                        })
+                                    : null}
+                                </ul>
+                            </Link>
+                        </li>
+                        }
+                        else if(item.submenu){
+                            return <li class="main-menu__item js-menu-item main-menu--has-children">
+                            <Link class="main-menu__link js-menulink nav-link drop-link" to='/'>
+                                {item.title}
+                                <ul class="sub-menu js-submenu">
+                                    {item.submenu ? 
+                                        item.submenu.map(sub=>{
+                                        return <li class="main-menu__item js-sub-item main-menu__item--has-children"><Link class="main-menu__link" to='/'>{sub.title}</Link></li>
+                                        })
+                                    : null}
+                                </ul>
+                            </Link>
+                        </li>
+                        }
+                        else{
+                            return <li class="main-menu__item js-menu-item">
+                            <Link class="main-menu__link js-menulink nav-link drop-link" to='/'>
+                                {item.title}
+                                <ul class="sub-menu js-submenu">
+                                    {item.submenu ? 
+                                        item.submenu.map(sub=>{
+                                        return <li class="main-menu__item js-sub-item main-menu__item--has-children"><Link class="main-menu__link" to='/'>{sub.title}</Link></li>
+                                        })
+                                    : null}
+                                </ul>
+                            </Link>
+                        </li>
+                        }
                     })
                 }
             </ul>
