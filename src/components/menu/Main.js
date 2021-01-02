@@ -9,7 +9,7 @@ function Main(mainmenu) {
                 {
                     mainmenu.items.map(item=>{
                 return <li class="main-menu__item js-menu-item">
-                            <Link class="main-menu__link js-menulink">
+                            <Link class="main-menu__link js-menulink nav-link">
                                 {item.title}
                                 <ul class="sub-menu js-submenu">
                                     {item.submenu ? 
