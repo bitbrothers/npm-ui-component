@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'react-router-dom';
+import Button from './Button';
 
 function Breadcrumbs() {
     return (
@@ -10,6 +12,11 @@ function Breadcrumbs() {
                 <li class="breadcrumb-item active" aria-current="page">Data</li>
                 </ol>
             </nav>
+            <Button 
+            type="round"
+            toggle="dropdown"
+            aria="false"
+            icon="settings"/>
         </div>
     )
 }

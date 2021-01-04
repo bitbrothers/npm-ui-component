@@ -2,12 +2,10 @@ import React from 'react';
 import Aux from './hoc/Aux';
 import $ from 'jquery';
 import {BrowserRouter, Link} from 'react-router-dom';
-import Dropwdown from './components/bootstrap/Dropwdown'
 
 import data from './Data';
-
-import Sidebar from './components/menu/Sidebar'
 import './styles.scss';
+import Task from './components/Task/Task';
 
 class App extends React.Component {
 
@@ -88,13 +86,7 @@ class App extends React.Component {
     return (
     <BrowserRouter>
       <Aux className="app">
-        <Sidebar 
-        logo={data.common.logo}
-        userPhoto={data.common.user}
-        quicklinks={data.components.quicklinks}
-        mainmenu={data.components.mainmenu}
-        />
-
+        <Task />
       </Aux>
     </BrowserRouter>
     );

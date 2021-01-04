@@ -2,18 +2,15 @@ import React from 'react'
 
 function Nav() {
     return (
-        <ul class="nav nav-tabs">
+        <ul class="nav nav-tabs nav-fill">
             <li class="nav-item">
-                <a class="nav-link" href="#">Active</a>
+                <a class="nav-link active" href="#">Tasks</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Link</a>
+                <a class="nav-link" href="#">File</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link" href="#">Activity</a>
             </li>
         </ul>
     )
