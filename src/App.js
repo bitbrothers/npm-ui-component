@@ -9,7 +9,7 @@ import Task from './components/Task/Task';
 
 class App extends React.Component {
 
-
+/*
   componentDidMount(){
     this.sidebarCollapse();
     this.menu();
@@ -78,7 +78,7 @@ class App extends React.Component {
         .end()
         .appendTo(element);
     }, time);
-  }
+  }*/
   
 
   render() {
