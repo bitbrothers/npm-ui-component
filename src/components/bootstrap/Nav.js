@@ -4,13 +4,13 @@ function Nav() {
     return (
         <ul class="nav nav-tabs nav-fill">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Tasks</a>
+                <a class="nav-link active" href="#">Active</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">File</a>
+                <a class="nav-link" href="#">Link</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Activity</a>
+                <a class="nav-link" href="#">Link</a>
             </li>
         </ul>
     )

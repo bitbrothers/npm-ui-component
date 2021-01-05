@@ -5,6 +5,7 @@ import Breadcrumbs from '../bootstrap/Breadcrumbs';
 import Navbar from '../bootstrap/Navbar';
 import Header from './Header'
 import Nav from '../bootstrap/Nav';
+import Dropwdown from '../bootstrap/Dropwdown';
 
 function Task() {
     return (
@@ -20,6 +21,7 @@ function Task() {
                         <div class="col-lg-11 col-xl-10">
                             <Header />
                             <Nav />
+                            <Dropwdown />
                         </div>
                     </div>
                 </div>
