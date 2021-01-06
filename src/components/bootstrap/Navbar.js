@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../assets/logo.svg'
+import user from '../../assets/avatar-female-2.jpg'
 
 function Navbar() {
     return (
@@ -15,7 +16,7 @@ function Navbar() {
   <div class="d-block d-lg-none ml-2">
     <div class="dropdown">
       <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <img alt="Image" src={logo} class="avatar" />
+        <img alt="Image" src={user} class="avatar" />
       </a>
       <div class="dropdown-menu dropdown-menu-right">
         <a href="nav-side-user.html" class="dropdown-item">Profile</a>
@@ -134,7 +135,7 @@ function Navbar() {
 <div class="d-none d-lg-block">
   <div class="dropup">
     <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      <img alt="Image" src="assets/img/avatar-male-4.jpg" class="avatar" />
+      <img alt="Image" src={user} class="avatar" />
     </a>
     <div class="dropdown-menu">
       <a href="nav-side-user.html" class="dropdown-item">Profile</a>
