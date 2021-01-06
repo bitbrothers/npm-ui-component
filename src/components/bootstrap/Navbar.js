@@ -1,44 +1,150 @@
 import React from 'react'
+import logo from '../../assets/logo.svg'
 
 function Navbar() {
     return (
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
-    
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-            </a>
-            <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+<a class="navbar-brand" href="index.html">
+  <img alt="Pipeline" src={logo} />
+</a>
+<div class="d-flex align-items-center">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="d-block d-lg-none ml-2">
+    <div class="dropdown">
+      <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img alt="Image" src={logo} class="avatar" />
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a href="nav-side-user.html" class="dropdown-item">Profile</a>
+        <a href="utility-account-settings.html" class="dropdown-item">Account Settings</a>
+        <a href="#" class="dropdown-item">Log Out</a>
+      </div>
     </div>
+  </div>
+</div>
+<div class="collapse navbar-collapse flex-column" id="navbar-collapse">
+  <ul class="navbar-nav d-lg-block">
 
-</nav>
+    <li class="nav-item">
+
+      <a class="nav-link" href="index.html">Overview</a>
+
+    </li>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2">Pages</a>
+      <div id="submenu-2" class="collapse">
+        <ul class="nav nav-small flex-column">
+
+          <li class="nav-item">
+            <a class="nav-link" href="pages-app.html">App Pages</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="pages-utility.html">Utility Pages</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="pages-layouts.html">Layouts</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </li>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-3" aria-controls="submenu-3">Components</a>
+      <div id="submenu-3" class="collapse">
+        <ul class="nav nav-small flex-column">
+
+          <li class="nav-item">
+            <a class="nav-link" href="components-bootstrap.html">Bootstrap</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="components-pipeline.html">Pipeline</a>
+          </li>
+
+        </ul>
+      </div>
+
+    </li>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="documentation/index.html">Documentation</a>
+
+    </li>
+
+    <li class="nav-item">
+
+      <a class="nav-link" href="documentation/changelog.html">Changelog</a>
+
+    </li>
+
+  </ul>
+  <hr />
+  <div class="d-none d-lg-block w-100">
+    <span class="text-small text-muted">Quick Links</span>
+    <ul class="nav nav-small flex-column mt-2">
+      <li class="nav-item">
+        <a href="nav-side-team.html" class="nav-link">Team Overview</a>
+      </li>
+      <li class="nav-item">
+        <a href="nav-side-project.html" class="nav-link">Project</a>
+      </li>
+      <li class="nav-item">
+        <a href="nav-side-task.html" class="nav-link">Single Task</a>
+      </li>
+      <li class="nav-item">
+        <a href="nav-side-kanban-board.html" class="nav-link">Kanban Board</a>
+      </li>
+    </ul>
+    <hr />
+  </div>
+  <div>
+    <form>
+      <div class="input-group input-group-dark input-group-round">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="material-icons">search</i>
+          </span>
+        </div>
+        <input type="search" class="form-control form-control-dark" placeholder="Search" aria-label="Search app" />
+      </div>
+    </form>
+    <div class="dropdown mt-2">
+      <button class="btn btn-primary btn-block dropdown-toggle" type="button" id="newContentButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Add New
+      </button>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Team</a>
+        <a class="dropdown-item" href="#">Project</a>
+        <a class="dropdown-item" href="#">Task</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="d-none d-lg-block">
+  <div class="dropup">
+    <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <img alt="Image" src="assets/img/avatar-male-4.jpg" class="avatar" />
+    </a>
+    <div class="dropdown-menu">
+      <a href="nav-side-user.html" class="dropdown-item">Profile</a>
+      <a href="utility-account-settings.html" class="dropdown-item">Account Settings</a>
+      <a href="#" class="dropdown-item">Log Out</a>
+    </div>
+  </div>
+</div>
+
+</div>
     )
 }
 
