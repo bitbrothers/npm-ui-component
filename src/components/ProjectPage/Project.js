@@ -6,7 +6,7 @@ import Navbar from '../bootstrap/Navbar';
 import Header from './Header'
 import Nav from '../bootstrap/Nav';
 import Tasks from './Tasks/Tasks'
-import TaskCard from '../pipeline/TaskCard';
+import Files from './Files/Files';
 
 
 function Project() {
@@ -25,6 +25,7 @@ function Project() {
                             <Nav />
                             <div class="tab-content">
                                 <Tasks />
+                                <Files />
                             </div>
                         </div>
                     </div>
