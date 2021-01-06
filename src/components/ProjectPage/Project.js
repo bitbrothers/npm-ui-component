@@ -5,9 +5,11 @@ import Breadcrumbs from '../bootstrap/Breadcrumbs';
 import Navbar from '../bootstrap/Navbar';
 import Header from './Header'
 import Nav from '../bootstrap/Nav';
-import Dropwdown from '../bootstrap/Dropwdown';
+import Tasks from './Tasks/Tasks'
+import TaskCard from '../pipeline/TaskCard';
 
-function Task() {
+
+function Project() {
     return (
         <div class="layout layout-nav-side">
             <Navbar />
@@ -21,7 +23,9 @@ function Task() {
                         <div class="col-lg-11 col-xl-10">
                             <Header />
                             <Nav />
-                            <Dropwdown />
+                            <div class="tab-content">
+                                <Tasks />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -30,4 +34,4 @@ function Task() {
     )
 }
 
-export default Task
+export default Project

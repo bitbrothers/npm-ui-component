@@ -5,7 +5,7 @@ import {BrowserRouter, Link} from 'react-router-dom';
 
 import data from './Data';
 import './styles.scss';
-import Task from './components/Task/Task';
+import Project from './components/ProjectPage/Project';
 
 class App extends React.Component {
 
@@ -85,7 +85,7 @@ class App extends React.Component {
     return (
     <BrowserRouter>
       <Aux className="app">
-        <Task />
+        <Project />
       </Aux>
     </BrowserRouter>
     );
