@@ -1,12 +1,12 @@
 import React from 'react';
-import Sidebar from '../menu/Sidebar';
-import data from '../../Data'; // Props
+
 import Breadcrumbs from '../bootstrap/Breadcrumbs';
 import Navbar from '../bootstrap/Navbar';
 import Header from './Header'
 import Nav from '../bootstrap/Nav';
 import Tasks from './Tasks/Tasks'
 import Files from './Files/Files';
+import Activity from './Activity/Activity'
 
 
 function Project() {
@@ -26,6 +26,7 @@ function Project() {
                             <div class="tab-content">
                                 <Tasks />
                                 <Files />
+                                <Activity />
                             </div>
                         </div>
                     </div>

@@ -1,10 +1,11 @@
 import React from 'react'
-import ListGroup from '../../bootstrap/ListGroup'
+import Activity from '../../pipeline/Activity'
+
 
 function FilesContent() {
     return (
         <ul class="list-group list-group-activity dropzone-previews flex-column-reverse">
-            <ListGroup />
+            
         </ul>
     )
 }
