@@ -1,15 +1,12 @@
 import React from 'react';
 import Aux from './hoc/Aux';
-import $ from 'jquery';
-import {BrowserRouter, Link} from 'react-router-dom';
-
-import data from './Data';
 import './styles.scss';
+import {BrowserRouter} from 'react-router-dom';
 import Project from './components/ProjectPage/Project';
 
 class App extends React.Component {
 
-  componentDidMount(){
+ /* componentDidMount(){
     this.sidebarCollapse();
     this.menu();
     this.dropdown();
@@ -77,9 +74,7 @@ class App extends React.Component {
         .end()
         .appendTo(element);
     }, time);
-  }
-  
-
+  }*/
   render() {
 
     return (
