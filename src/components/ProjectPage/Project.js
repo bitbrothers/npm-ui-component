@@ -11,6 +11,8 @@ import Activity from './Activity/Activity'
 
 import data from '../../Data'
 import UserModal from './Modals/UserModal'
+import TaskModal from './Modals/TaskModal';
+import ProjectModal from './Modals/ProjectModal';
 
 
 function Project() {
@@ -38,6 +40,8 @@ function Project() {
                                 <Activity />
                             </div>
                             <UserModal />
+                            <ProjectModal />
+                            <TaskModal />
                         </div>
                     </div>
                 </div>
