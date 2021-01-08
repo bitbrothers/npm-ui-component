@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+
 
 import Breadcrumbs from '../bootstrap/Breadcrumbs';
 import Navbar from '../bootstrap/Navbar';
@@ -12,6 +13,9 @@ import data from '../../Data'
 
 
 function Project() {
+
+    const [initial, setState] = useState(data);
+
     return (
         <div class="layout layout-nav-side">
             <Navbar />
@@ -24,9 +28,9 @@ function Project() {
                     <div class="row justify-content-center">
                         <div class="col-lg-11 col-xl-10">
                             <Header 
-                            users={data.pages.projectpage.users}/>
+                            users={initial.pages.projectpage.users}/>
                             <Nav 
-                            titles={data.pages.projectpage.nav}/>
+                            titles={initial.pages.projectpage.nav}/>
                             <div class="tab-content">
                                 <Tasks />
                                 <Files />
