@@ -1,6 +1,6 @@
 import React from 'react'
 import CardList from '../../pipeline/CardList'
-import ContentHeader from '../ContentHeader'
+import ContentHeader from './TasksHeader'
 
 function Tasks() {
     return (
