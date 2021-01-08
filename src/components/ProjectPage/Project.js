@@ -10,6 +10,7 @@ import Files from './Files/Files';
 import Activity from './Activity/Activity'
 
 import data from '../../Data'
+import UserModal from './Modals/UserModal'
 
 
 function Project() {
@@ -36,6 +37,7 @@ function Project() {
                                 <Files />
                                 <Activity />
                             </div>
+                            <UserModal />
                         </div>
                     </div>
                 </div>
