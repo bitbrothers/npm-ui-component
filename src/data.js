@@ -1,5 +1,7 @@
 import logo from './assets/logo.svg';
-import user from './assets/avatar-female-2.jpg';
+import user1 from './assets/avatar-female-2.jpg';
+import user2 from './assets/avatar-male-3.jpg';
+import user3 from './assets/avatar-male-4.jpg';
 
 const data = {
     common:{
@@ -8,7 +10,7 @@ const data = {
         author: "Krish Vora",
         date: "28th December",
         logo: logo,
-        user: user
+        user: user1
     },
     components:{
         mainmenu: [
@@ -66,6 +68,23 @@ const data = {
             linkto: '/'
           },
         ],
+    },
+    pages:{
+      projectpage:{
+        users:[
+          {name:'Clarence', src: user1},
+          {name:'Matt', src: user2},
+          {name:'John', src: user3}
+        ],
+        nav:[
+          {name:'Tasks',active: true},
+          {name:'Files'},
+          {name:'Activity'}
+        ],
+        tasks:{},
+        files:{},
+        activity:{}
+      }
     }
 }
 

@@ -8,6 +8,8 @@ import Tasks from './Tasks/Tasks'
 import Files from './Files/Files';
 import Activity from './Activity/Activity'
 
+import data from '../../Data'
+
 
 function Project() {
     return (
@@ -21,8 +23,10 @@ function Project() {
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-11 col-xl-10">
-                            <Header />
-                            <Nav />
+                            <Header 
+                            users={data.pages.projectpage.users}/>
+                            <Nav 
+                            titles={data.pages.projectpage.nav}/>
                             <div class="tab-content">
                                 <Tasks />
                                 <Files />

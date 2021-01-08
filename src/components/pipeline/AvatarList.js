@@ -3,11 +3,13 @@ import Avatar from './Avatar'
 
 function AvatarList({source, size}) {
 
+    const users = source.map(item=>{
+        return <li><Avatar source={item.src} name={item.name}/></li>
+    })
+
     return (
         <ul class="avatars">
-            <li><Avatar source={source}/></li>
-            <li><Avatar source={source}/></li>
-            <li><Avatar source={source}/></li>
+            {users}
         </ul>
     )      
 }

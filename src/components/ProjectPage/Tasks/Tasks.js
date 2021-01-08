@@ -1,5 +1,4 @@
 import React from 'react'
-import Aux from '../../../hoc/Aux'
 import CardList from '../../pipeline/CardList'
 import ContentHeader from '../ContentHeader'
 

@@ -4,14 +4,14 @@ import ProgressBar from '../bootstrap/ProgressBar';
 import user from "../../assets/avatar-male-3.jpg"; //Props
 
 
-function Header() {
+function Header({users}) {
     return (
         <div class="page-header">
             <h1>Brand Concept and Design</h1>
             <p class="lead">Research, ideate and present brand concepts for client consideration</p>
             <div class="d-flex align-items-center">
                 <AvatarList 
-                source={user}/>
+                source={users}/>
                 <button class="btn btn-round flex-shrink-0" data-toggle="modal" data-target="#user-manage-modal">
                     <i class="material-icons">add</i>
                 </button>

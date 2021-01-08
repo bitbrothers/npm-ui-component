@@ -1,7 +1,7 @@
 import React from 'react';
 
-function Avatar({source, size}) {
-    return <img alt="Image" src={source} class="avatar" data-title="Peggy Brown" data-toggle="tooltip" title="Krish"/>
+function Avatar({source, name, size}) {
+    return <img alt="User" src={source} class="avatar" data-title={name} data-toggle="tooltip" title={name}/>
 }
 
 export default Avatar;
