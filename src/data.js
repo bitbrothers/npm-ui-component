@@ -91,7 +91,7 @@ const data = {
     },
     pages:{
       projectpage:{
-        users:[
+        activeusers:[
           {name:'Clarence', src: fuser1},
           {name:'Matt', src: muser2},
           {name:'John', src: muser3}
@@ -101,7 +101,13 @@ const data = {
           {name:'Files'},
           {name:'Activity'}
         ],
-        tasks:{},
+        tasks:{
+          activeusers:[
+            {name:'Clarence', src: fuser1},
+            {name:'Matt', src: muser2},
+            {name:'John', src: muser3}
+          ]
+        },
         files:{},
         activity:{}
       }

@@ -31,7 +31,7 @@ function Project() {
                     <div class="row justify-content-center">
                         <div class="col-lg-11 col-xl-10">
                             <Header 
-                            users={initial.pages.projectpage.users}/>
+                            users={initial.pages.projectpage.activeusers}/>
                             <Nav 
                             titles={initial.pages.projectpage.nav}/>
                             <div class="tab-content">

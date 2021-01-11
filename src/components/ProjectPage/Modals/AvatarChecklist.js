@@ -16,9 +16,9 @@ function AvatarChecklist({users}) {
     })
 
     return (
-        <div class="form-group-users filter-list-1610098068267">
+        <div>
             {userlist}
-        </div>
+        </div>   
     )
 }
 

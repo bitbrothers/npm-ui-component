@@ -1,6 +1,7 @@
 import React from 'react'
 import AvatarChecklist from './AvatarChecklist'
 import data from '../../../Data'; 
+import Footer from './Footer';
 
 function UserModal() {
     return (
@@ -46,18 +47,16 @@ function UserModal() {
                           </div>
                           <input type="search" class="form-control filter-list-input" placeholder="Filter members" aria-label="Filter Members"/>
                         </div>
-                        
+                        <div class="form-group-users filter-list-1610357232689">
                           <AvatarChecklist 
                           users={data.common.users}/>
-
+                        </div>
                       </div>
                     </div>
              
-                    <div class="modal-footer">
-                      <button role="button" class="btn btn-primary" type="submit">
-                        Done
-                      </button>
-                    </div>
+                    <Footer 
+                    content="Done"/>
+
                   </div>
                 </div>
               </form>
