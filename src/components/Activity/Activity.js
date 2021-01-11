@@ -1,6 +1,6 @@
 import React from 'react'
 import ActivityHeader from './ActivityHeader'
-import ActivityComponent from '../../pipeline/Activity'
+import ActivityComponent from '../custom/Activity'
 
 function Activity() {
     return (

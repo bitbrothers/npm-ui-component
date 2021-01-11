@@ -1,15 +1,14 @@
 import React, {useState} from 'react';
 
-
-import Breadcrumbs from '../bootstrap/Breadcrumbs';
-import Navbar from '../bootstrap/Navbar';
-import Header from './Header'
-import Nav from '../bootstrap/Nav';
+import Breadcrumbs from './custom/Breadcrumbs';
+import Navbar from './custom/Navbar';
+import Header from './Header/Header'
+import Nav from './custom/Nav';
 import Tasks from './Tasks/Tasks'
 import Files from './Files/Files';
 import Activity from './Activity/Activity'
 
-import data from '../../data'
+import data from '../data'
 import UserModal from './Modals/UserModal'
 import TaskModal from './Modals/TaskModal';
 import ProjectModal from './Modals/ProjectModal';

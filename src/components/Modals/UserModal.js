@@ -1,7 +1,7 @@
 import React from 'react'
 import AvatarChecklist from './AvatarChecklist'
-import AvatarList from '../../pipeline/AvatarList'
-import data from '../../../data'; 
+import AvatarList from '../custom/AvatarList'
+import data from '../../data'; 
 import Footer from './Footer';
 
 function UserModal() {

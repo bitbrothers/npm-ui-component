@@ -1,8 +1,8 @@
 import React from 'react'
 import AvatarChecklist from './AvatarChecklist'
-import data from '../../../data'; 
+import data from '../../data'; 
 import Footer from './Footer';
-import AvatarList from '../../pipeline/AvatarList';
+import AvatarList from '../custom/AvatarList';
 
 
 function TaskModal() {

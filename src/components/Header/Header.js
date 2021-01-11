@@ -1,7 +1,6 @@
 import React from 'react';
-import AvatarList from '../pipeline/AvatarList';
-import ProgressBar from '../bootstrap/ProgressBar';
-import user from "../../assets/avatar-male-3.jpg"; //Props
+import AvatarList from '../custom/AvatarList';
+import ProgressBar from '../custom/ProgressBar';
 
 
 function Header({users}) {

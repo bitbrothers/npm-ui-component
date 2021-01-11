@@ -2,7 +2,7 @@ import React from 'react';
 import Aux from './hoc/Aux';
 import './styles.scss';
 import {BrowserRouter} from 'react-router-dom';
-import Project from './components/ProjectPage/Project';
+import Project from './components/Project';
 
 class App extends React.Component {
 
