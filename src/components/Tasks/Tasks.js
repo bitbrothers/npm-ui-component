@@ -1,5 +1,5 @@
 import React from 'react'
-import CardList from '../custom/CardList'
+import CardList from '../Custom/CardList'
 import ContentHeader from './TasksHeader'
 
 function Tasks() {

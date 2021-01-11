@@ -1,5 +1,5 @@
 import React from 'react'
-import Activity from '../custom/Activity'
+import Activity from '../Custom/Activity'
 
 
 function FilesContent() {

@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 
-import Breadcrumbs from './custom/Breadcrumbs';
-import Navbar from './custom/Navbar';
+import Breadcrumbs from './Custom/Breadcrumbs';
+import Navbar from './Custom/Navbar';
 import Header from './Header/Header'
-import Nav from './custom/Nav';
+import Nav from './Custom/Nav';
 import Tasks from './Tasks/Tasks'
 import Files from './Files/Files';
 import Activity from './Activity/Activity'

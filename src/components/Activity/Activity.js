@@ -1,6 +1,6 @@
 import React from 'react'
 import ActivityHeader from './ActivityHeader'
-import ActivityComponent from '../custom/Activity'
+import ActivityComponent from '../Custom/Activity'
 
 function Activity() {
     return (

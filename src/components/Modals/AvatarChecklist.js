@@ -1,5 +1,5 @@
 import React from 'react'
-import Avatar from '../custom/Avatar'
+import Avatar from '../Custom/Avatar'
 
 function AvatarChecklist({users}) {
     let count = 0

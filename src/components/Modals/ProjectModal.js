@@ -2,7 +2,7 @@ import React from 'react'
 import AvatarChecklist from './AvatarChecklist'
 import data from '../../data'; 
 import Footer from './Footer';
-import AvatarList from '../custom/AvatarList';
+import AvatarList from '../Custom/AvatarList';
 
 function ProjectModal() {
     return (

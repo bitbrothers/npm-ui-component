@@ -1,6 +1,6 @@
 import React from 'react';
-import AvatarList from '../custom/AvatarList';
-import ProgressBar from '../custom/ProgressBar';
+import AvatarList from '../Custom/AvatarList';
+import ProgressBar from '../Custom/ProgressBar';
 
 
 function Header({users}) {
