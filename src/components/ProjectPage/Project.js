@@ -9,7 +9,7 @@ import Tasks from './Tasks/Tasks'
 import Files from './Files/Files';
 import Activity from './Activity/Activity'
 
-import data from '../../Data'
+import data from '../../data'
 import UserModal from './Modals/UserModal'
 import TaskModal from './Modals/TaskModal';
 import ProjectModal from './Modals/ProjectModal';

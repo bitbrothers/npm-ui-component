@@ -1,6 +1,7 @@
 import React from 'react'
 import AvatarChecklist from './AvatarChecklist'
-import data from '../../../Data'; 
+import AvatarList from '../../pipeline/AvatarList'
+import data from '../../../data'; 
 import Footer from './Footer';
 
 function UserModal() {
@@ -19,25 +20,9 @@ function UserModal() {
                       <div class="users-manage" data-filter-list="form-group-users">
                         <div class="mb-3">
                           {/* Avatar */}
-                          <ul class="avatars text-center">
-
-                            <li>
-                              <img alt="Claire Connors" src="assets/img/avatar-female-1.jpg" class="avatar" data-toggle="tooltip" data-title="Claire Connors" />
-                            </li>
-
-                            <li>
-                              <img alt="Marcus Simmons" src="assets/img/avatar-male-1.jpg" class="avatar" data-toggle="tooltip" data-title="Marcus Simmons" />
-                            </li>
-
-                            <li>
-                              <img alt="Peggy Brown" src="assets/img/avatar-female-2.jpg" class="avatar" data-toggle="tooltip" data-title="Peggy Brown" />
-                            </li>
-
-                            <li>
-                              <img alt="Harry Xai" src="assets/img/avatar-male-2.jpg" class="avatar" data-toggle="tooltip" data-title="Harry Xai" />
-                            </li>
-
-                          </ul>
+                          <AvatarList 
+                              source={data.pages.projectpage.tasks.activeusers}
+                              style="text-center"/>
                         </div>
                         <div class="input-group input-group-round">
                           <div class="input-group-prepend">

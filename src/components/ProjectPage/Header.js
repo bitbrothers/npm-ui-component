@@ -17,7 +17,10 @@ function Header({users}) {
                 </button>
             </div>
             <div>
-                <ProgressBar />
+                <ProgressBar 
+                style="bg-success"
+                value="25"/>
+                
                 <div class="d-flex justify-content-between text-small">
                     <div class="d-flex align-items-center">
                       <i class="material-icons">playlist_add_check</i>

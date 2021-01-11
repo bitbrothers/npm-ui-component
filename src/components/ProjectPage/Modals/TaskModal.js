@@ -1,6 +1,6 @@
 import React from 'react'
 import AvatarChecklist from './AvatarChecklist'
-import data from '../../../Data'; 
+import data from '../../../data'; 
 import Footer from './Footer';
 import AvatarList from '../../pipeline/AvatarList';
 

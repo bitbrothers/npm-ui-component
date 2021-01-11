@@ -20,8 +20,8 @@ function Navbar() {
         <img alt="Image" src={user} class="avatar" />
       </a>
       <div class="dropdown-menu dropdown-menu-right">
-        <a href="nav-side-user.html" class="dropdown-item">Profile</a>
-        <a href="utility-account-settings.html" class="dropdown-item">Account Settings</a>
+        <a href="#" class="dropdown-item">Profile</a>
+        <a href="#" class="dropdown-item">Account Settings</a>
         <a href="#" class="dropdown-item">Log Out</a>
       </div>
     </div>
@@ -32,7 +32,7 @@ function Navbar() {
 
     <li class="nav-item">
 
-      <a class="nav-link" href="index.html">Overview</a>
+      <a class="nav-link" href="#">Overview</a>
 
     </li>
 
@@ -43,15 +43,15 @@ function Navbar() {
         <ul class="nav nav-small flex-column">
 
           <li class="nav-item">
-            <a class="nav-link" href="pages-app.html">App Pages</a>
+            <a class="nav-link" href="#">App Pages</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="pages-utility.html">Utility Pages</a>
+            <a class="nav-link" href="#">Utility Pages</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="pages-layouts.html">Layouts</a>
+            <a class="nav-link" href="#">Layouts</a>
           </li>
 
         </ul>
@@ -66,11 +66,11 @@ function Navbar() {
         <ul class="nav nav-small flex-column">
 
           <li class="nav-item">
-            <a class="nav-link" href="components-bootstrap.html">Bootstrap</a>
+            <a class="nav-link" href="#">Bootstrap</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="components-pipeline.html">Pipeline</a>
+            <a class="nav-link" href="#">Pipeline</a>
           </li>
 
         </ul>
@@ -80,13 +80,13 @@ function Navbar() {
 
     <li class="nav-item">
 
-      <a class="nav-link" href="documentation/index.html">Documentation</a>
+      <a class="nav-link" href="#">Documentation</a>
 
     </li>
 
     <li class="nav-item">
 
-      <a class="nav-link" href="documentation/changelog.html">Changelog</a>
+      <a class="nav-link" href="#">Changelog</a>
 
     </li>
 
@@ -96,16 +96,16 @@ function Navbar() {
     <span class="text-small text-muted">Quick Links</span>
     <ul class="nav nav-small flex-column mt-2">
       <li class="nav-item">
-        <a href="nav-side-team.html" class="nav-link">Team Overview</a>
+        <a href="#" class="nav-link">Team Overview</a>
       </li>
       <li class="nav-item">
-        <a href="nav-side-project.html" class="nav-link">Project</a>
+        <a href="#" class="nav-link">Project</a>
       </li>
       <li class="nav-item">
-        <a href="nav-side-task.html" class="nav-link">Single Task</a>
+        <a href="#" class="nav-link">Single Task</a>
       </li>
       <li class="nav-item">
-        <a href="nav-side-kanban-board.html" class="nav-link">Kanban Board</a>
+        <a href="#" class="nav-link">Kanban Board</a>
       </li>
     </ul>
     <hr />
@@ -130,8 +130,8 @@ function Navbar() {
       <img alt="Image" src={user} class="avatar" />
     </a>
     <div class="dropdown-menu">
-      <a href="nav-side-user.html" class="dropdown-item">Profile</a>
-      <a href="utility-account-settings.html" class="dropdown-item">Account Settings</a>
+      <a href="#" class="dropdown-item">Profile</a>
+      <a href="#" class="dropdown-item">Account Settings</a>
       <a href="#" class="dropdown-item">Log Out</a>
     </div>
   </div>
