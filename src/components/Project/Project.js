@@ -1,20 +1,20 @@
 import React, {useState} from 'react';
+import '../../styles.scss';
 
-import Breadcrumbs from './Custom/Breadcrumbs';
-import Navbar from './Custom/Navbar';
-import Header from './Header/Header'
-import Nav from './Custom/Nav';
-import Tasks from './Tasks/Tasks'
-import Files from './Files/Files';
-import Activity from './Activity/Activity'
+import Breadcrumbs from '../Custom/Breadcrumbs';
+import Navbar from '../Custom/Navbar';
+import Header from '../Header/Header'
+import Nav from '../Custom/Nav';
+import Tasks from '../Tasks/Tasks'
+import Files from '../Files/Files';
+import Activity from '../Activity/Activity'
 
-import data from '../data'
-import UserModal from './Modals/UserModal'
-import TaskModal from './Modals/TaskModal';
-import ProjectModal from './Modals/ProjectModal';
+import UserModal from '../Modals/UserModal'
+import TaskModal from '../Modals/TaskModal';
+import ProjectModal from '../Modals/ProjectModal';
 
 
-function Project() {
+function Project({data}) {
 
     return (
         <div class="layout layout-nav-side">
