@@ -1,10 +1,9 @@
 import React from 'react'
 import AvatarChecklist from './AvatarChecklist'
-import data from '../../data'; 
 import Footer from './Footer';
 import AvatarList from '../Custom/AvatarList';
 
-function ProjectModal() {
+function ProjectModal({users,activeusers}) {
     return (
         <form class="modal fade" id="project-edit-modal" tabindex="-1" style={{display: "none"}} aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -76,7 +75,7 @@ function ProjectModal() {
                           <div class="users-manage" data-filter-list="form-group-users">
                             <div class="mb-3">
                             <AvatarList 
-                              source={data.pages.projectpage.activeusers}
+                              source={activeusers}
                               style="text-center"/>
 
                             </div>
@@ -90,7 +89,7 @@ function ProjectModal() {
                             </div>
                             <div class="form-group-users filter-list-1610357232687">
                               <AvatarChecklist 
-                              users={data.common.users}/>
+                              users={users}/>
                             </div>
                           </div>
                         </div>

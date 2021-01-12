@@ -4,7 +4,7 @@ import AvatarList from '../Custom/AvatarList'
 import data from '../../data'; 
 import Footer from './Footer';
 
-function UserModal() {
+function UserModal({users,activeusers}) {
     return (
         <form class="modal fade" id="user-manage-modal" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog" role="document">
@@ -21,7 +21,7 @@ function UserModal() {
                         <div class="mb-3">
                           {/* Avatar */}
                           <AvatarList 
-                              source={data.pages.projectpage.tasks.activeusers}
+                              source={activeusers}
                               style="text-center"/>
                         </div>
                         <div class="input-group input-group-round">
@@ -34,7 +34,7 @@ function UserModal() {
                         </div>
                         <div class="form-group-users filter-list-1610357232689">
                           <AvatarChecklist 
-                          users={data.common.users}/>
+                          users={users}/>
                         </div>
                       </div>
                     </div>

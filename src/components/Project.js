@@ -16,8 +16,6 @@ import ProjectModal from './Modals/ProjectModal';
 
 function Project() {
 
-    const [initial, setState] = useState(data);
-
     return (
         <div class="layout layout-nav-side">
             <Navbar />
@@ -30,17 +28,27 @@ function Project() {
                     <div class="row justify-content-center">
                         <div class="col-lg-11 col-xl-10">
                             <Header 
-                            users={initial.pages.projectpage.activeusers}/>
+                            users={data.pages.projectpage.activeusers}/>
                             <Nav 
-                            titles={initial.pages.projectpage.nav}/>
+                            titles={data.pages.projectpage.nav}/>
                             <div class="tab-content">
                                 <Tasks />
                                 <Files />
                                 <Activity />
                             </div>
-                            <UserModal />
-                            <ProjectModal />
-                            <TaskModal />
+                            
+                            <UserModal 
+                            users={data.common.users}
+                            activeusers={data.pages.projectpage.tasks.activeusers}/>
+
+                            <ProjectModal 
+                            users={data.common.users}
+                            activeusers={data.pages.projectpage.activeusers}/>
+
+                            <TaskModal 
+                            users={data.common.users}
+                            activeusers={data.pages.projectpage.tasks.activeusers}/>
+
                         </div>
                     </div>
                 </div>
