@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Project from './components/Project/Project'
 import data from './data'
-import './index.css'
+import './styles.scss';
+
 
 export default class ProjectPage extends Component {
 

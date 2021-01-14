@@ -1001,15 +1001,13 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _logo = _interopRequireDefault(require("../../assets/logo.svg"));
-
-var _avatarFemale = _interopRequireDefault(require("../../assets/avatar-female-2.jpg"));
-
 var _Search = _interopRequireDefault(require("./Search"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function Navbar() {
+function Navbar(_ref) {
+  var logo = _ref.logo,
+      user = _ref.user;
   return /*#__PURE__*/_react.default.createElement("div", {
     class: "navbar navbar-expand-lg bg-dark navbar-dark sticky-top"
   }, /*#__PURE__*/_react.default.createElement("a", {
@@ -1017,7 +1015,7 @@ function Navbar() {
     href: "index.html"
   }, /*#__PURE__*/_react.default.createElement("img", {
     alt: "Pipeline",
-    src: _logo.default
+    src: logo
   })), /*#__PURE__*/_react.default.createElement("div", {
     class: "d-flex align-items-center"
   }, /*#__PURE__*/_react.default.createElement("button", {
@@ -1042,7 +1040,7 @@ function Navbar() {
     "aria-expanded": "false"
   }, /*#__PURE__*/_react.default.createElement("img", {
     alt: "Image",
-    src: _avatarFemale.default,
+    src: user,
     class: "avatar"
   })), /*#__PURE__*/_react.default.createElement("div", {
     class: "dropdown-menu dropdown-menu-right"
@@ -1186,7 +1184,7 @@ function Navbar() {
     "aria-expanded": "false"
   }, /*#__PURE__*/_react.default.createElement("img", {
     alt: "Image",
-    src: _avatarFemale.default,
+    src: user,
     class: "avatar"
   })), /*#__PURE__*/_react.default.createElement("div", {
     class: "dropdown-menu"
@@ -2255,8 +2253,6 @@ var _AvatarChecklist = _interopRequireDefault(require("./AvatarChecklist"));
 
 var _AvatarList = _interopRequireDefault(require("../Custom/AvatarList"));
 
-var _data = _interopRequireDefault(require("../../data"));
-
 var _Footer = _interopRequireDefault(require("./Footer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -2330,8 +2326,6 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
-require("../../styles.scss");
-
 var _Breadcrumbs = _interopRequireDefault(require("../Custom/Breadcrumbs"));
 
 var _Navbar = _interopRequireDefault(require("../Custom/Navbar"));
@@ -2362,7 +2356,10 @@ function Project(_ref) {
   var data = _ref.data;
   return /*#__PURE__*/_react.default.createElement("div", {
     class: "layout layout-nav-side"
-  }, /*#__PURE__*/_react.default.createElement(_Navbar.default, null), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement(_Navbar.default, {
+    logo: data.common.logo,
+    user: data.common.fuser1
+  }), /*#__PURE__*/_react.default.createElement("div", {
     class: "main-container"
   }, /*#__PURE__*/_react.default.createElement(_Breadcrumbs.default, null), /*#__PURE__*/_react.default.createElement("div", {
     class: "container"
@@ -2647,7 +2644,7 @@ var _Project = _interopRequireDefault(require("./components/Project/Project"));
 
 var _data = _interopRequireDefault(require("./data"));
 
-require("./index.css");
+require("./styles.scss");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

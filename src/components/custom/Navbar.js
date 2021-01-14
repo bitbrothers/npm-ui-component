@@ -1,9 +1,7 @@
 import React from 'react'
-import logo from '../../assets/logo.svg'
-import user from '../../assets/avatar-female-2.jpg'
 import Search from './Search'
 
-function Navbar() {
+function Navbar({logo, user}) {
     return (
 <div class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../../styles.scss';
+
 
 import Breadcrumbs from '../Custom/Breadcrumbs';
 import Navbar from '../Custom/Navbar';
@@ -7,9 +7,9 @@ import Header from '../Header/Header'
 import Nav from '../Custom/Nav';
 import Tasks from '../Tasks/Tasks'
 import Files from '../Files/Files';
-import Activity from '../Activity/Activity'
+import Activity from '../Activity/Activity';
 
-import UserModal from '../Modals/UserModal'
+import UserModal from '../Modals/UserModal';
 import TaskModal from '../Modals/TaskModal';
 import ProjectModal from '../Modals/ProjectModal';
 
@@ -18,7 +18,9 @@ function Project({data}) {
 
     return (
         <div class="layout layout-nav-side">
-            <Navbar />
+            <Navbar 
+            logo={data.common.logo}
+            user={data.common.fuser1}/>
             <div class="main-container">
                 {/* Breadcrumbs */}
                 <Breadcrumbs />
