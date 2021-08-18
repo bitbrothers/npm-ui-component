@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+// Import the Todo component from this folder and send it down to ./components/index.js
+import Todo from './Todo';
 
-// Export all the explicitly exported components, this file will contain our
-// components when built by webpack and sent off to the world.
-export * from './components';
+export default Todo;

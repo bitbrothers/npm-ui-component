@@ -1,0 +1,7 @@
+# IDE temp files
+.idea
+
+# Development Tarball of the plugin
+*.tgz
+
+package-lock.json

@@ -15,6 +15,45 @@
  * limitations under the License.
  */
 
-// Export all the explicitly exported components, this file will contain our
-// components when built by webpack and sent off to the world.
-export * from './components';
+import React, {Component} from "react";
+import {connection} from "../../constants/connection";
+
+class Todo extends Component {
+
+
+    constructor(props) {
+        super(props);
+    }
+    state = {
+        toDoList:[],
+    };
+
+    render() {
+
+        let listToDos = this.state.toDoList.map((toDo) =>
+            <div>
+                <li>{toDo.id}</li>
+            </div>
+        );
+
+        return(
+            <div>
+                <ul>{listToDos}</ul>
+            </div>
+        );
+    }
+
+    componentDidMount() {
+        connection.get("/todos")
+            .then( response =>{
+                this.setState({toDoList:response})
+            })
+            .catch(error =>{
+                console.log(error);
+            })
+    }
+
+
+}
+
+export default Todo;
