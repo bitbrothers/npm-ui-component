@@ -1,0 +1,95 @@
+// Colors
+$white: #fff;
+
+$primary: #227ff9;
+$secondary: #000; // #424242
+
+$background-primary: #f5f6f7;
+$background-secondary: #fff;
+
+$gray: #e7e7e7;
+$light-gray: #f5f6f7;
+$dark-gray: #a7a7a7;
+
+$gray-border: #e7e7e7;
+
+// Colors for antd, bootstrap cleanUI
+$text: #74708d;
+$text-lighten: #c0bdd0;
+$text-darken: #615d7c;
+
+$gray-lighten: #f8f8f8;
+
+$primary-gray: #445469;
+
+$gray-darken: #b8beca;
+$gray-border: #e7e7e7;
+$gray-background: #e5e5e5;
+// $icon-darken: #000000d9;
+
+$black: #0e0b20;
+$black-lighten: #222034;
+$black-lighten-more: #393749;
+$logo-grey: #445469;
+$blue: #137297;
+$blue-darken: #0072d6;
+$orange: #ff9c53;
+$yellow: #fbd184;
+$dark-green: #368184;
+$menuBg: #001529;
+$menuBg-darken: #000c17;
+
+// Accent colors
+$default: #acb7bf;
+$primary: #227ff9;
+$secondary: #424242;
+$success: #46be8a;
+$info: #137297;
+$warning: #f92222;
+$danger: #f92222;
+
+// Font Family
+$base__font-family: 'Roboto', sans-serif !important;
+$font-family: 'Roboto', sans-serif;
+
+// Font Size
+$base__font-size: 14 !default;
+
+// FOnt Weight
+$base__font-weight: 400;
+
+// Convert value rem() sass mixin
+// @function rem($px, $base: $base__font-size) {
+// @return #{floor(($px/$base) * 100) / 100}rem; // to REMs
+// comment code above and uncomment below for change REMs to PXs
+//@return #{$px}px;
+// }
+
+// Transitions
+@mixin transition-fast() {
+  transition: all 0.05s ease-in-out;
+}
+@mixin transition-middle() {
+  transition: all 0.1s ease-in-out;
+}
+@mixin transition-slow() {
+  transition: all 0.2s ease-in-out;
+}
+@mixin transition-very-slow() {
+  transition: all 0.4s ease-in-out;
+}
+@mixin transition-color() {
+  transition: color 0.2s ease-in-out;
+}
+
+// Responsive utils
+$xxl-min-width: 1600px;
+$xxl-max-width: 1599px;
+$xl-min-width: 1200px;
+$xl-max-width: 1199px;
+$md-min-width: 992px;
+$md-max-width: 991px;
+$sm-min-width: 768px;
+$sm-max-width: 767px;
+$xs-min-width: 576px;
+$xs-max-width: 575px;

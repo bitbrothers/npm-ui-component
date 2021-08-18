@@ -14,5 +14,24 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-export { default as Todo } from './Todo';
-export { default as Button } from './Button';
+
+import { red } from "@material-ui/core/colors";
+import color from "@material-ui/core/colors/amber";
+import React, {Component} from "react";
+import {connection} from "../../constants/connection";
+import style from "./style"
+class Button extends Component {
+    constructor(props) {
+        super(props);
+    }
+    render() {
+        return(
+            <div style={{color: 'red', backgroundColor: 'blue'}}>
+                {this.props.text}
+            </div>
+        );
+    }
+
+}
+
+export default Button;

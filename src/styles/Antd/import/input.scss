@@ -1,0 +1,18 @@
+// Import mixins
+@import '../../mixins.scss';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN INPUT */
+
+.ant-input-disabled {
+  background: $background-primary;
+}
+.ant-input[disabled] {
+  background: $background-primary;
+}
+.ant-input-search {
+  border-radius: 25px;
+  input {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,29 @@
+// Import mixins
+@import '../../mixins';
+
+/////////////////////////////////////////////////////////////////////////////////////////
+/*  ANT DESIGN SELECT */
+
+.ant-select {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.ant-select-dropdown {
+  border: 1px solid #e9e9e9;
+}
+.ant-select-disabled.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  background: $background-primary;
+}
+.ant-select-auto-complete {
+  ol,
+  ul,
+  dl {
+    margin: 0;
+  }
+}
+.ant-select-selection-item-content {
+  color: white;
+}
+.ant-select-selection-item-remove {
+  color: white !important;
+}

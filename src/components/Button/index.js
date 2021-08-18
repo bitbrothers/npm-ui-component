@@ -14,5 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-export { default as Todo } from './Todo';
-export { default as Button } from './Button';
+// Import the Todo component from this folder and send it down to ./components/index.js
+import Button from './Button';
+
+export default Button;

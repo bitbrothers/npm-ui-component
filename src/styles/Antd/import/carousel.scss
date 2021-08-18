@@ -1,0 +1,60 @@
+.ant-carousel .slick-next:before {
+  content: '▶';
+}
+.ant-carousel .slick-prev:before {
+  content: '◀';
+}
+// .slick-next:before,
+// .slick-prev:before {
+// font-family: Poppins;
+// }
+// .slick-next:before,
+// .slick-prev:before {
+//   color: #ec6451 !important;
+// }
+[class*='ant-'],
+[class*='ant-'] *,
+[class*='ant-'] :after,
+[class*='ant-'] :before,
+[class^='ant-'],
+[class^='ant-'] *,
+[class^='ant-'] :after,
+[class^='ant-'] :before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.slick-next:before {
+  content: '▶';
+}
+.slick-prev:before {
+  content: '◀';
+}
+.slick-prev:before,
+.slick-next:before {
+  // font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: 0.75;
+  color: white;
+  color: rgb(19, 114, 151) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+// *,
+// :after,
+// :before {
+//   -moz-box-sizing: border-box;
+//   -webkit-box-sizing: border-box;
+//   box-sizing: border-box;
+// }

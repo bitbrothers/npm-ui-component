@@ -1,5 +1,5 @@
 {
-  "name": "documint-ui-component",
+  "name": "documint-ui",
   "version": "1.0.0",
   "description": "Documint.ai UI Component Library",
   "main": "dist/build.js",
